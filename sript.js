@@ -48,7 +48,7 @@ btnVypocti.addEventListener("click", function () {
 });
 // ############################################### oeslani reservace
 
-btnRezerve.addEventListener("click", () => {
+btnRezerve.addEventListener("click", (e) => {
   console.log(`${email.toString().indexOf("@")}`);
   if (
     email.value.toString().indexOf("@") !== -1 ||
@@ -56,5 +56,6 @@ btnRezerve.addEventListener("click", () => {
   ) {
   } else {
     alert("email is not correct");
+    e.preventDefault();
   }
 });
