@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapp">
+      <h1>Cyklopujcovna</h1>
+      <form action="">
+        <div class="container">
+          <h3>Vyber kola</h3>
+          <label for="horske">horske kolo 500,-/den</label>
+          <input
+            type="checkbox"
+            name="horske"
+            id="horske"
+            class="inp-kola"
+            value="500" />
+          kusu:
+          <input type="number" class="inp-kola" id="in-horske" min="0" />
+        </div>
+        <div class="container">
+          <label for="detske">detske kolo 200,-/den</label>
+          <input
+            type="checkbox"
+            name="detske"
+            id="detske"
+            class="inp-kola"
+            value="200" />
+          kusu:
+          <input type="number" class="inp-kola" id="in-detske" min="0" />
+        </div>
+        <div class="container">
+          <label for="silnicni">silnicni kolo 1500,-/den</label>
+          <input
+            type="checkbox"
+            name="silnicni"
+            id="silnicni"
+            class="inp-kola"
+            value="1500" />
+          kusu:
+          <input type="number" class="inp-kola" id="in-silnicni" min="0" />
+        </div>
+        <div class="container">
+          <label for="gravel">gravel kolo 2500,-/ den</label>
+          <input
+            type="checkbox"
+            name="gravel"
+            id="gravel"
+            class="inp-kola"
+            value="2500" />
+          kusu:
+          <input type="number" class="inp-kola" id="in-gravel" min="0" />
+        </div>
+        <div class="container">
+          <h3>Doba zapujcky</h3>
+          <select name="sel-dny" id="sel-dny">
+            <option value="5" selected>5 dni a mene</option>
+            <option value="7">7 dni</option>
+            <option value="14">14dni</option>
+            <option value="30">Mesic(31dni)</option>
+          </select>
+        </div>
+        <div class="container">
+          <h3>Nosic na auto</h3>
+          <label for="stresninosic"> nosic na strechu: +5% ceny</label
+          ><input type="radio" name="rd-nosic" id="stresninosic" value="1.05" />
+          <label for="taznynosic">nosic na tazne: +10% ceny</label
+          ><input type="radio" name="rd-nosic" id="taznynosic" value="1.10" />
+          <label for="zadnynosic">zadny nosic</label
+          ><input type="radio" name="rd-nosic" id="zadnynosic" value="1" />
+        </div>
+        <div class="container">
+          <h3>Vypocet ceny vypujcky</h3>
+          <button class="btn" type="button" name="btn-vypocti">
+            Vypocti cenu
+          </button>
+          <label for="navrhCeny">Vas rozpocet</label>
+          <input
+            type="number"
+            name="navrhCeny"
+            id="navrhCeny"
+            min="0"
+            value="0" />
+          <input type="text" name="vypisCeny" id="vypisCeny" readonly />
+          <p name="vypis"></p>
+        </div>
+        <div class="container">
+          <h3>Dokonceni rezervace</h3>
+          <label for="email">Zadejte kontaktni email</label>
+          <input type="email" name="email" id="email" />
+          <button type="submit" class="btn disabled" name="reserve">
+            Rezervuj
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- scripts bellow -->
+    <script src="sript.js"></script>
+  </body>
+</html>

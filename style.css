@@ -1,0 +1,27 @@
+.container {
+  margin: 1px 5px;
+  display: block;
+  padding: 0px 2px;
+}
+.inp-kola {
+  width: 25px;
+}
+.btn {
+  display: block;
+  margin: 5px 0px;
+}
+label {
+  display: block;
+}
+input[type="number"] {
+  align-self: center;
+  justify-self: right;
+}
+input:read-only {
+  display: block;
+  margin-top: 3px;
+}
+form {
+  width: 50%;
+  border: 2px solid black;
+}
